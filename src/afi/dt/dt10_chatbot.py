@@ -56,7 +56,7 @@ F_global = {F_global:.3f}  |  Occupancy: {total_occupancy}/{max_occupancy} perso
                 import litellm
                 # Uses Gemini 1.5 Flash via LiteLLM if GEMINI_API_KEY is set
                 response = litellm.completion(
-                    model="gemini/gemini-1.5-flash",
+                    model="gemini/gemini-2.0-flash",
                     messages=[{"role": "system", "content": system_prompt}] + self.conversation_history,
                     max_tokens=800,
                 )
